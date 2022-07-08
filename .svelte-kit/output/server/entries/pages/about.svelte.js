@@ -3,7 +3,7 @@ const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `
 <div class="${"sm:hidden flex flex-col font-mono my-8"}"><h1 class="${"text-2xl text-center my-2"}">Hello there!</h1>
     
-    <img class="${"my-2"}" src="${"src/components/img/oak.jpg"}" alt="${"Professor Oak"}">
+    <img class="${"my-2"}" src="${"src/components/img/profoak.jpg"}" alt="${"Professor Oak"}">
     
     <div><div><p>Welcome to the wonderful world of Pokemon! My name is Oak. People call me the Pokemon Prof! The world is inhabited by creatures called Pokemon. From some people, Pokemon are pets. Others use them for fights. Myself... I study Pokemon as a profession.</p>
 
