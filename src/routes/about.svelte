@@ -2,7 +2,7 @@
 <div class="sm:hidden flex flex-col  font-mono my-8">
     <h1 class='text-2xl text-center my-2'>Hello there!</h1>
     
-    <img class='my-2' src="/src/components/img/profoak.jpg" alt="Professor Oak">
+    <img class='my-2' src="/src/img/profoak.jpg" alt="Professor Oak">
     
     <div>
         <div>
@@ -27,6 +27,6 @@
         <div>
             <h1 class='text-4xl text-center'>Hello there!</h1>
     
-            <img class='my-2' src="src/components/img/profoak.jpg" alt="Professor Oak">
+            <img class='my-2' src="src/img/profoak.jpg" alt="Professor Oak">
         </div>
 </div>
