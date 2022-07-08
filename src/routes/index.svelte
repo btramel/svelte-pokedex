@@ -46,7 +46,7 @@
 </svelte:head>
 
 <!-- var searchTerm updates alongside the input value because of bind:value -->
-<input class='w-full rounded-md text-lg p-4 mt-4 border-2 border-gray-200 dark:bg-slate-800 dark:text-gray-100 dark:border-black' type="text" bind:value={searchTerm} placeholder='Search Pokemon'>
+<input class='w-full rounded-md text-lg p-4 mt-4 border-2 border-gray-200 dark:bg-slate-800 dark:text-gray-100 dark:border-black' type="text" bind:value={searchTerm} placeholder='Search Pokedex'>
 
 <!-- $ displays the variable but ALSO reacts to changes within that data -->
 <!-- operates like a foreach, displaying name of each pokemon
