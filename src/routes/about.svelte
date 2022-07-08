@@ -2,7 +2,7 @@
 <div class="sm:hidden flex flex-col  font-mono my-8">
     <h1 class='text-2xl text-center my-2'>Hello there!</h1>
     
-    <img class='my-2' src="src/components/img/profoak.jpg" alt="Professor Oak">
+    <img class='my-2' src="/src/components/img/profoak.jpg" alt="Professor Oak">
     
     <div>
         <div>
@@ -10,7 +10,7 @@
 
             <br>
 
-            <p>On a serious note, if you want to see how I built this website using Svelte, Tailwind, some magic, and a lot of love, check out my <a class='font-bold underline hover:shadow-lg' href="https://github.com/btramel" target='none'>Github</a>.</p>
+            <p>On a serious note, if you want to see how I built this website using Svelte, SvelteKit, Tailwind, some magic, and a lot of love, check out my <a class='font-bold underline hover:shadow-lg' href="https://github.com/btramel" target='none'>Github</a>.</p>
         </div>
     </div>
 </div>
@@ -27,6 +27,6 @@
         <div>
             <h1 class='text-4xl text-center'>Hello there!</h1>
     
-            <img class='my-2' src="src/components/img/oak.jpg" alt="Professor Oak">
+            <img class='my-2' src="src/components/img/profoak.jpg" alt="Professor Oak">
         </div>
 </div>
