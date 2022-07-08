@@ -46,12 +46,14 @@
 </svelte:head>
 
 <!-- var searchTerm updates alongside the input value because of bind:value -->
-<input class='w-full rounded-md text-lg p-4 mt-4 border-2 border-gray-200 dark:bg-slate-800 dark:text-gray-100 dark:border-black' type="text" bind:value={searchTerm} placeholder='Search Pokedex'>
+<input class='w-full rounded-md text-lg p-4 mt-4 border-2 border-gray-200 
+dark:bg-slate-800 dark:text-gray-100 dark:border-black' 
+type="text" bind:value={searchTerm} placeholder='Search Pokedex'>
 
 <!-- $ displays the variable but ALSO reacts to changes within that data -->
 <!-- operates like a foreach, displaying name of each pokemon
 if any data in the store changes, it will rerender -->
-<div class="py-4 grid gap-4 md:grid-cols-2 grid-cols-1">
+<div class="py-4 grid gap-4 md:grid-cols-3 grid-cols-1">
     {#each filteredPokemon as pokeman}
         <PokemanCard pokeman={pokeman}/>
     {/each}
