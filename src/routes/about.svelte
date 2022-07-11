@@ -1,5 +1,5 @@
 <!-- mobile style -->
-<div class="sm:hidden flex flex-col  font-mono my-8">
+<div class="sm:hidden flex flex-col font-mono my-8">
     <h1 class='text-2xl text-center my-2'>Hello there!</h1>
     
     <img class='my-2' src="/profoak.jpg" alt="Professor Oak">
@@ -18,7 +18,7 @@
 <!-- desktop/tablet style -->
 <div class="hidden sm:grid grid-cols-2 font-mono my-8">    
         <div>
-            <p>Welcome to the wonderful world of Pokemon! My name is Oak. People call me the Pokemon Prof! The world is inhabited by creatures called Pokemon. From some people, Pokemon are pets. Others use them for fights. Myself... I study Pokemon as a profession.</p>
+            <p>Welcome to the wonderful world of Pokemon! My name is Oak. People call me the Pokemon Prof! The world is inhabited by creatures called Pokemon. For some people, Pokemon are pets. Others use them for fights. Myself... I study Pokemon as a profession.</p>
 
             <br>
 

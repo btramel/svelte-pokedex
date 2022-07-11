@@ -9,6 +9,9 @@
      <slot />
  </div>
  <style>
+:global(body) {
+    background-color: blanchedalmond;
+}
     @tailwind base;
     @tailwind components;
     @tailwind utilities;

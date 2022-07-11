@@ -1,9 +1,8 @@
 <script>
     function toggle() {
         window.document.body.classList.toggle('dark')
-    }
+    };
 </script>
-
 
 <div class="container">
     <div class="toggler">
@@ -44,7 +43,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #f3f4f6;
+    background-color: cornsilk;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     }
@@ -62,8 +61,7 @@
     -webkit-transition: 0.4s;
     transition: 0.4s;
     box-shadow: 0 0px 15px #2020203d;
-    background:  #356abc url('https://i.ibb.co/7JfqXxB/sunny.png');
-
+    background: #356abc url('https://i.ibb.co/7JfqXxB/sunny.png');
     background-repeat: no-repeat;
     background-position: center;
     }
@@ -95,7 +93,7 @@
     }
 
     :global(body) {
-		transition: background-color 0.3s
+		transition: background-color 0.3s;
 	}
 	:global(body.dark) {
 		background-color: #0f172a;
