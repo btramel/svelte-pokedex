@@ -2,7 +2,7 @@
     // loading here so that by the time we need the data, we already have it
     export async function load({params}) {
             // query the first two generations of pokemon
-    const url = 'https://pokeapi.co/api/v2/pokemon?limit=500';
+    const url = 'https://pokeapi.co/api/v2/pokemon?limit=251';
     const res = await fetch(url);
     const data = await res.json();
     // return pokemon data in custom JSON format
@@ -48,7 +48,7 @@
 </svelte:head>
 
 <!-- var searchTerm updates alongside the input value because of bind:value -->
-<input class='w-full rounded-md text-lg p-4 mt-4  shadow-xl bg-offwhite border-1 border-gray-200
+<input class='w-full rounded-md text-lg p-4 mt-4 shadow-xl bg-offwhite border-1 border-gray-200
 dark:bg-slate-800 dark:text-gray-100 dark:border-black' 
 type="text" bind:value={searchTerm} placeholder='Search Pokedex'>
 
