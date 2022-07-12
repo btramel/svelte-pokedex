@@ -29,6 +29,14 @@ export async function load({params}) {
     $: totalInches = Math.round((pokeman[0].height / 10) * 39.3701);
     $: feet = Math.trunc(totalInches / 12);
     $: remainingInches = totalInches % feet;
+
+    $: html = pokeman[1].flavor_text_entries[2].flavor_text
+                        .replace('\f',       '\n')
+                        .replace('\u00ad\n', '')
+                        .replace('\u00ad',   '')
+                        .replace(' -\n',     ' - ')
+                        .replace('-\n',      '-')
+                        .replace('\n',       ' ')
 </script>
 <!-- container -->
 <div class="flex flex-col max-h-screen">
@@ -43,14 +51,14 @@ export async function load({params}) {
 
     <!-- flavor text -->
     <div class="flex flex-row m-2 font-mono text-center justify-center">
-        <p class='w-auto lg:mx-8'>{pokeman[1].flavor_text_entries[2].flavor_text}</p>
+        <p class='w-auto lg:mx-8'>{html}</p>
     </div>
 
     <!-- details -->
-    <div class='flex flex-row items-center sm:justify-around m-2 font-mono'>
-        <p class='flex-row'>Type: <Type pokeman={pokeman[0]}/> </p>
-        <p>Height: <strong>{`${feet}'${remainingInches}"`}</strong></p>
-        <p>Weight: <strong>{Math.round((pokeman[0].weight / 10) * 2.2)} lbs</strong></p>
+    <div class='flex flex-row items-center justify-around m-2 font-mono'>
+        <p class="flex flex-col sm:flex-row"> Type:<Type pokeman={pokeman[0]}/></p> 
+        <p class="flex flex-col sm:flex-row">Height: <strong>{`${feet}'${remainingInches}"`}</strong></p> 
+        <p class="flex flex-col sm:flex-row">Weight: <strong>{Math.round((pokeman[0].weight / 10) * 2.2)}lbs</strong></p>
     </div>
 
     <!-- details continuted -->

@@ -30,5 +30,5 @@
 </script>
 
 {#key poketype}
-    <strong id='type' class='px-3 py-1 rounded-xl capitalize {newtype} dark:text-black'> {poketype} </strong>
+    <strong id='type' class='px-2 py-1 rounded-xl capitalize {newtype} dark:text-black'> {poketype} </strong>
 {/key}
