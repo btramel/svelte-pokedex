@@ -1,4 +1,5 @@
 <script>
+    // toggle dark class
     function toggle() {
         window.document.body.classList.toggle('dark')
     };
@@ -8,6 +9,7 @@
     <div class="toggler">
         <slot/>
         <label id="switch" class="switch">
+            <!-- toggle function called on click -->
             <input on:click={toggle} type="checkbox" id="slider">
             <span class="slider round"></span>
         </label>
@@ -92,6 +94,7 @@
     border-radius: 50%;
     }
 
+    /* global styles */
     :global(body) {
 		transition: background-color 0.3s;
 	}
@@ -101,6 +104,7 @@
         transition: background-color 0.3s
 	}
 
+    /* media query for slider! */
     @media screen and (max-width: 640px) {
         .switch {
             transform:translate(20%, 20%);

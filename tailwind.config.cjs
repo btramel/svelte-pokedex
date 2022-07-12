@@ -1,5 +1,5 @@
 // @type {import('tailwindcss').Config}
-
+// extended tailwind-recognized colors
 module.exports = {
   darkMode: 'class',
   content: ['./src/**/*.{html,js,svelte,ts}'],

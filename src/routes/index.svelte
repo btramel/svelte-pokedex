@@ -1,5 +1,6 @@
 <script context='module'>
-    // loading here so that by the time we need the data, we already have it
+    // loading here so that by the time we need the data on other pages, we already have it
+    // module can be imported to other components
     export async function load({params}) {
             // query the first two generations of pokemon
     const url = 'https://pokeapi.co/api/v2/pokemon?limit=251';
@@ -16,7 +17,8 @@
         };
     });
 
-    // gives us the ability to load the information before it gets to the user. it comes through the props
+    // gives us the ability to load the information before it gets to the user. 
+    // it comes through the props
     return {props: { pokemon:loadedPokemon}}
     }
 </script>
@@ -48,9 +50,14 @@
 </svelte:head>
 
 <!-- var searchTerm updates alongside the input value because of bind:value -->
-<input class='w-full rounded-md text-lg p-4 mt-4 shadow-xl bg-offwhite border-1 border-gray-200
-dark:bg-slate-800 dark:text-gray-100 dark:border-black' 
-type="text" bind:value={searchTerm} placeholder='Search Pokedex'>
+<input 
+    class='w-full rounded-md text-lg p-4 mt-4 shadow-xl bg-offwhite border-1 border-gray-200
+    dark:bg-slate-800 dark:text-gray-100 dark:border-black' 
+
+    type="text" 
+    bind:value={searchTerm} 
+    placeholder='Search Pokedex'
+    >
 
 <!-- $ displays the variable but ALSO reacts to changes within that data -->
 <!-- operates like a foreach, displaying name of each pokemon
